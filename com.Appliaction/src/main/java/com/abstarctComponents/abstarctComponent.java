@@ -30,11 +30,13 @@ public class abstarctComponent {
 	public  cartPage goToCarPage() {
 		cartHeader.click();
 		cartPage cartpage=new cartPage(driver);
+		System.out.println("cart page running");
 		return cartpage;
 	}
 	public orderPage goToOrderspage() {
 		OrdersHeader.click();
 		orderPage orderpage=new orderPage(driver);
+		System.out.println("orderpage is started");
 		return orderpage;
 	}
 	public void waitForWebElementappear(WebElement ele) {
