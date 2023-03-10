@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+<listeners>
+		<listener class-name="testngProject.ListenrDemo1"/>
+	</listeners>
+	<test name="testing"  parallel="classes" thread-count="2">
+
+<parameter name="UrL" value="abc calsses.com"></parameter>
+
+		<classes>
+
+			<class name="testngProject.day1"/>
+			
+
+		</classes>
+	</test>
+
+	
+</suite> 
